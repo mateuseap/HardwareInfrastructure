@@ -227,9 +227,6 @@ p2_10points:
 	jal x0, palavra2
 
 end:
-	addi x9, zero, 10
-	bge x11, x9, divide	
-
 	addi x11, x11, 48
 	addi x13, x13, 48
 	
@@ -325,9 +322,6 @@ end:
 	addi x9, zero, 33 #x9 == !
 	sb x9, 1024(x0)
 
-	halt
-
-divide:
 	halt
 
 empate:
